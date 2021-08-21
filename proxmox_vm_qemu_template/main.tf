@@ -9,6 +9,7 @@ resource "proxmox_vm_qemu" "template" {
   cores       = var.cores
   desc        = var.description
   sshkeys     = join("\n", var.ssh_keys)
+  ciuser      = var.ciuser
   disk {
     size    = var.root_disk_size
     type    = "virtio"
