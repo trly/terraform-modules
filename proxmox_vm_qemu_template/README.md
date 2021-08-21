@@ -26,6 +26,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_balloon"></a> [balloon](#input\_balloon) | The minimum amount of memory to allocate to the VM in Megabytes, when Automatic Memory Allocation is desired. Proxmox will enable a balloon device on the guest to manage dynamic allocation. | `number` | `512` | no |
+| <a name="input_ciuser"></a> [ciuser](#input\_ciuser) | Set the default cloud-init user for provisioning. | `string` | n/a | yes |
 | <a name="input_cores"></a> [cores](#input\_cores) | The number of CPU cores per CPU socket to allocate to the VM. | `number` | `2` | no |
 | <a name="input_default_gateway"></a> [default\_gateway](#input\_default\_gateway) | The default gateway to use for the primary network interface | `string` | n/a | yes |
 | <a name="input_description"></a> [description](#input\_description) | The description of the VM. Shows as the 'Notes' field in the Proxmox GUI. | `string` | n/a | yes |

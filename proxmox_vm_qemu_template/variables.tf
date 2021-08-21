@@ -3,6 +3,11 @@ variable "name" {
   type        = string
 }
 
+variable "ciuser" {
+  description = "Set the default cloud-init user for provisioning."
+  type        = string
+}
+
 variable "description" {
   description = "The description of the VM. Shows as the 'Notes' field in the Proxmox GUI."
   type        = string
